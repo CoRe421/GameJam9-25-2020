@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawnerScript : MonoBehaviour
+public class EnemySpawnerScriptY : MonoBehaviour
 {
     public GameObject enemy;
     public Player player;
