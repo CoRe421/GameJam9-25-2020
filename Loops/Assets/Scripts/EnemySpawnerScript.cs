@@ -10,7 +10,7 @@ public class EnemySpawnerScript : MonoBehaviour
     float randY;
     float randX;
     Vector2 whereToSpawn;
-    public float spawnRate = 2f;
+    public float spawnRate = 0.5f;
     float nextSpawn = 0;
 
     void Start() {
