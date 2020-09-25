@@ -22,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         mMovement.Set(horizontal, vertical, 0f);
-        mMovement.Normalize();
+        //mMovement.Normalize();
 
         transform.position += mMovement * Time.deltaTime * moveSpeed;
 
