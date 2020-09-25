@@ -21,15 +21,10 @@ public class CharacterMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        mMovement.Set(horizontal, 0f, vertical);
+        mMovement.Set(horizontal, vertical, 0f);
         mMovement.Normalize();
 
         transform.position += mMovement * Time.deltaTime * moveSpeed;
-
-        bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
-        bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
-
-        bool isWalking = hasHorizontalInput || hasVerticalInput;
 
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, mMovement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
