@@ -13,7 +13,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Start()
     {
-        mRigidbody = GetComponent<Rigidbody2D>();
+
     }
 
     void FixedUpdate()
@@ -31,7 +31,7 @@ public class CharacterMovement : MonoBehaviour
 
         bool isWalking = hasHorizontalInput || hasVerticalInput;
 
-        Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+        Vector3 desiredForward = Vector3.RotateTowards(transform.forward, mMovement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
     }
 
