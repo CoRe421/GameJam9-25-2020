@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawnerScriptY : MonoBehaviour
 {
     public GameObject enemy;
-    public Player player;
+    public GameObject player;
 
     float randY;
     float randX;
@@ -14,7 +14,7 @@ public class EnemySpawnerScriptY : MonoBehaviour
     float nextSpawn = 0;
 
     void Start() {
-        player = FindObjectOfType<Player>();
+
     }
 
     void Update() {

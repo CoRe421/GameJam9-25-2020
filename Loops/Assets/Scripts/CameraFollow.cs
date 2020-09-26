@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
+        DontDestroyOnLoad(transform.gameObject);
         offset = transform.position - Player.transform.position;
     }
 
