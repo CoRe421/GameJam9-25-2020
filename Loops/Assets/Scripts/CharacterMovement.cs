@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Start()
     {
-
+        DontDestroyOnLoad(transform.gameObject);
     }
 
     void FixedUpdate()
