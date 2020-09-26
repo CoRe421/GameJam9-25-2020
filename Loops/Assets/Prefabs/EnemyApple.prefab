@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7511762385798643810}
   m_Layer: 0
   m_Name: EnemyApple
-  m_TagString: FallingApple
+  m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
