@@ -1131,6 +1131,12 @@ PrefabInstance:
       propertyPath: spawnRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1319363564544733029, guid: fb04b6247ba0c814da1ac91bc5448d7e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3574055806776632215, guid: 54b32206eaa054040882afc5127ddb1b,
+        type: 3}
     - target: {fileID: 1319363564544733030, guid: fb04b6247ba0c814da1ac91bc5448d7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5343,6 +5349,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6763417192367832321, guid: db24f5da2d2f4b842b387d22fe0ca8da,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3574055806776632215, guid: 54b32206eaa054040882afc5127ddb1b,
+        type: 3}
     - target: {fileID: 6763417192367832323, guid: db24f5da2d2f4b842b387d22fe0ca8da,
         type: 3}
       propertyPath: m_Name
@@ -5431,6 +5443,12 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 7412773372056598132, guid: 5499f52ee434c3c45872894a8c2c0f4f,
+        type: 3}
+    - target: {fileID: 8912102339535379928, guid: 8e9a1532fd26bb84bbb72955db6def61,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3574055806776632215, guid: 54b32206eaa054040882afc5127ddb1b,
         type: 3}
     - target: {fileID: 8912102339535379929, guid: 8e9a1532fd26bb84bbb72955db6def61,
         type: 3}
