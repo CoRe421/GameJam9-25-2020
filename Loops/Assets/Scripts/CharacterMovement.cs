@@ -35,6 +35,13 @@ public class CharacterMovement : MonoBehaviour
 
     }
 
+
+    void OnTriggerEnter2D()
+    {
+
+    }
+
+
     void Update()
     {
 

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7792909773258423256}
   - component: {fileID: 7792909773258423263}
-  - component: {fileID: 7792909773258423257}
   - component: {fileID: -1339795583466724008}
   - component: {fileID: -6424107086719522689}
+  - component: {fileID: 5886532488591061800}
   m_Layer: 0
   m_Name: EnemyDiamond
   m_TagString: Diamond
@@ -84,18 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7792909773258423257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7792909773258423262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4527c04e70628cf478c898ca9018d1ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &-1339795583466724008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,9 +125,21 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 1
+--- !u!114 &5886532488591061800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7792909773258423262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2119b77eb089b034ca4e5c3fcb6cdf5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
