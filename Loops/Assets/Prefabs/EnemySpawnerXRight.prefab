@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5358219987204112107
+--- !u!1 &6763417192367832323
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5358219987204112105}
-  - component: {fileID: 5358219987204112104}
+  - component: {fileID: 6763417192367832320}
+  - component: {fileID: 6763417192367832321}
   m_Layer: 0
-  m_Name: EnemySpawnerX
+  m_Name: EnemySpawnerXRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5358219987204112105
+--- !u!4 &6763417192367832320
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5358219987204112107}
+  m_GameObject: {fileID: 6763417192367832323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1924461, y: 3.4145098, z: -2.4857244}
+  m_LocalPosition: {x: -25.593613, y: -11.933142, z: -3.0567398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5358219987204112104
+--- !u!114 &6763417192367832321
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5358219987204112107}
+  m_GameObject: {fileID: 6763417192367832323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42086007796fd5246a577e875f3dac9a, type: 3}
+  m_Script: {fileID: 11500000, guid: 79a3fe011af41e540a99a022a5ab4502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1682023595119177358, guid: 5499f52ee434c3c45872894a8c2c0f4f, type: 3}
+  enemy: {fileID: 7792909773258423262, guid: 1982d89d3e5ffaa449124959b027392f, type: 3}
   player: {fileID: 0}
   spawnRate: 0.5

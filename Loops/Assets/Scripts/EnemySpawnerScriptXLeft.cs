@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawnerScriptX : MonoBehaviour {
+public class EnemySpawnerScriptXLeft : MonoBehaviour {
     public GameObject enemy;
     public Player player;
 
@@ -19,9 +19,8 @@ public class EnemySpawnerScriptX : MonoBehaviour {
     void Update() {
         if (Time.time > nextSpawn) {
             nextSpawn = Time.time + spawnRate;
-            randX = Random.Range(player.transform.position.x-10, player.transform.position.x + 10);
             randY = Random.Range(player.transform.position.y-5, player.transform.position.y + 8);
-            whereToSpawn = new Vector2(randX, randY);
+            whereToSpawn = new Vector2(-22f, randY);
             Instantiate(enemy, whereToSpawn, Quaternion.identity);
         }
     }
