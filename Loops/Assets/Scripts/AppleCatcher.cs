@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class AppleCatcher : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D other)
+
+    void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.tag == "FallingApple")
+        Debug.Log("A");
+        if (other.gameObject.tag.Equals("FallingApple"))
         {
+            Debug.Log("A");
             Destroy(other.gameObject);
         }
     }

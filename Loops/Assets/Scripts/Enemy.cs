@@ -18,4 +18,14 @@ public class Enemy : MonoBehaviour
 
         transform.position = tempPosition;
     }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "CatcherWall" || other.gameObject.tag == "PlayerTag")
+        {
+            Destroy(gameObject);
+            Debug.Log(gameObject.tag);
+        }
+        
+    }
 }
