@@ -23,8 +23,9 @@ public class Score : MonoBehaviour
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if (other == player.GetComponent<Collider2D>())
-        score += 1;
-        Debug.Log(score);
+        if (other == player.GetComponent<Collider2D>()) {
+            score += 1;
+            Debug.Log(score);
+        }
     }
 }
