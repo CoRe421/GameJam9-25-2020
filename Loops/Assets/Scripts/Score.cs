@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Score : MonoBehaviour
 {
     Collider2D collider;
-    public GameObject player;
     public int score;
 
     // Start is called before the first frame update
@@ -23,7 +22,7 @@ public class Score : MonoBehaviour
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if (other == player.GetComponent<Collider2D>())
+        if (other.gameObject.tag == "PlayerTag")
         {
             score += 1;
             Debug.Log(score);

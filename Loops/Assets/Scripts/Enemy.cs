@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
+
+    public float moveSpeed = 3f;
+    public Vector3 velocity;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,24 +20,19 @@ public class Enemy : MonoBehaviour
     {
         if (this.tag == "Apple")
         {
-            Vector2 tempPosition = transform.position;
-            tempPosition.y -= 0.01f;
-            transform.position = tempPosition;
+            velocity.y = -moveSpeed;
+            transform.Translate(velocity * Time.deltaTime);
         }
 
         else if (this.tag == "Grape")
         {
-            Vector2 tempPosition = transform.position;
-            tempPosition.x += 0.01f;
-
-            transform.position = tempPosition;
+            velocity.x = moveSpeed;
+            transform.Translate(velocity * Time.deltaTime);
         }
         else if (this.tag == "Diamond")
         {
-            Vector2 tempPosition = transform.position;
-            tempPosition.x -= 0.01f;
-
-            transform.position = tempPosition;
+            velocity.x = -moveSpeed;
+            transform.Translate(velocity * Time.deltaTime);
         }
 
     }
